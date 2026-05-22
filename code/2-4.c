@@ -6,6 +6,10 @@ int main(int argc, const char* argv[]) {
 
     FILE* fp = fopen(argv[1], "r");
 
+    while(feof(fp)==0) {
+        
+    }
+
 
 
     fclose(fp);
