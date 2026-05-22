@@ -18,7 +18,7 @@ int main(int argc, const char *argv[])
     {
         ++count;
         fscanf(fp, "%s %d", students[count].name, &students[count].score);
-        printf("%d\n", students[count]);
+        printf("%d\n", students[count].score);
     }
 
     int max = 0;
@@ -31,7 +31,7 @@ int main(int argc, const char *argv[])
         if (students[i].score > max)
             max = students[i].score;
     }
-    avg = avg/count;
+    avg = avg/(count-1);
 
     printf("max: %d\n", max);
     printf("avg: %.2f\n", avg);
