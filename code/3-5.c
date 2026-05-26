@@ -8,6 +8,9 @@ int main(int argc, const char* argv[]) {
         return 0;
     }
 
+    //here
+    perror(); //3-1
+
 
     int sum = 0;
 
