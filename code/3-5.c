@@ -9,11 +9,19 @@ int main(int argc, const char* argv[]) {
     }
 
     //here
-    perror(); //3-1
+    int num, sum = 0;
+    char* no[100];
 
+    while(feof(fp) == 0) {
+        int result = fscanf(fp, "%d", &num);
+        if(result == 1) {
+            sum +=num;
+        } else {
+            fscanf(fp, "%s", no);
+            fprintf(stderr, "invalid input %s\n", no); //3-1
+        }
 
-    int sum = 0;
-
+    }
 
     printf("sum: %d\n", sum);
     fclose(fp);
